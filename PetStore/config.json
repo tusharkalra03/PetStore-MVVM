@@ -1,0 +1,7 @@
+{
+    "settings": {
+        "workingDays" : ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "workingHours" : [900, 1800]
+    }
+}
+
