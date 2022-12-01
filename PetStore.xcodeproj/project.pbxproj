@@ -19,7 +19,18 @@
 		D309D220292D3B6400E3C11F /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D309D21F292D3B6400E3C11F /* PetDetailView.swift */; };
 		D309D222292D3E9F00E3C11F /* WikiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D309D221292D3E9F00E3C11F /* WikiResult.swift */; };
 		D339E6E4292E132800921785 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339E6E3292E132800921785 /* AppStates.swift */; };
+		D355D8F4293794CF0090D281 /* PetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355D8F3293794CF0090D281 /* PetStoreTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D355D8F5293794CF0090D281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D309D1DD292D2BD500E3C11F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D309D1E4292D2BD500E3C11F;
+			remoteInfo = PetStore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D309D1E5292D2BD500E3C11F /* PetStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +45,8 @@
 		D309D21F292D3B6400E3C11F /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
 		D309D221292D3E9F00E3C11F /* WikiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiResult.swift; sourceTree = "<group>"; };
 		D339E6E3292E132800921785 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
+		D355D8F1293794CF0090D281 /* PetStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D355D8F3293794CF0090D281 /* PetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D355D8EE293794CF0090D281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D309D1E7292D2BD500E3C11F /* PetStore */,
+				D355D8F2293794CF0090D281 /* PetStoreTests */,
 				D309D1E6292D2BD500E3C11F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D309D1E5292D2BD500E3C11F /* PetStore.app */,
+				D355D8F1293794CF0090D281 /* PetStoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +136,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D355D8F2293794CF0090D281 /* PetStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				D355D8F3293794CF0090D281 /* PetStoreTests.swift */,
+			);
+			path = PetStoreTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +167,24 @@
 			productReference = D309D1E5292D2BD500E3C11F /* PetStore.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D355D8F0293794CF0090D281 /* PetStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D355D8F9293794CF0090D281 /* Build configuration list for PBXNativeTarget "PetStoreTests" */;
+			buildPhases = (
+				D355D8ED293794CF0090D281 /* Sources */,
+				D355D8EE293794CF0090D281 /* Frameworks */,
+				D355D8EF293794CF0090D281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D355D8F6293794CF0090D281 /* PBXTargetDependency */,
+			);
+			name = PetStoreTests;
+			productName = PetStoreTests;
+			productReference = D355D8F1293794CF0090D281 /* PetStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +197,10 @@
 				TargetAttributes = {
 					D309D1E4292D2BD500E3C11F = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					D355D8F0293794CF0090D281 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = D309D1E4292D2BD500E3C11F;
 					};
 				};
 			};
@@ -169,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				D309D1E4292D2BD500E3C11F /* PetStore */,
+				D355D8F0293794CF0090D281 /* PetStoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +235,13 @@
 				D309D219292D2FDC00E3C11F /* pets_list.json in Resources */,
 				D309D1F0292D2BD600E3C11F /* Preview Assets.xcassets in Resources */,
 				D309D1ED292D2BD600E3C11F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D355D8EF293794CF0090D281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +262,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D355D8ED293794CF0090D281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D355D8F4293794CF0090D281 /* PetStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D355D8F6293794CF0090D281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D309D1E4292D2BD500E3C11F /* PetStore */;
+			targetProxy = D355D8F5293794CF0090D281 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D309D207292D2BD600E3C11F /* Debug */ = {
@@ -385,6 +461,44 @@
 			};
 			name = Release;
 		};
+		D355D8F7293794CF0090D281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FFXBV4LHU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tusharkalra.PetStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetStore";
+			};
+			name = Debug;
+		};
+		D355D8F8293794CF0090D281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FFXBV4LHU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tusharkalra.PetStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PetStore";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +516,15 @@
 			buildConfigurations = (
 				D309D20A292D2BD600E3C11F /* Debug */,
 				D309D20B292D2BD600E3C11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D355D8F9293794CF0090D281 /* Build configuration list for PBXNativeTarget "PetStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D355D8F7293794CF0090D281 /* Debug */,
+				D355D8F8293794CF0090D281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
